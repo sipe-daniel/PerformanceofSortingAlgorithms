@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+
+<VBox id="VBox"  maxHeight="Infinity" maxWidth="Infinity" spacing="20"  prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController"> 
+    <children>
+        
+          <!--pour appeler ou joindre une partie de l'interface-->
+         <fx:include source="menu.fxml"/> 
+      
+
+            <VBox  alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+                <Text text="Programme test de la performance des algorithmes"/>
+            </VBox>
+        
+      
+    
+        <HBox maxHeight="Infinity" maxWidth="Infinity" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+           <!--pour appeler ou joindre une partie de l'interface-->
+            
+            <fx:include source="donnee.fxml"/> 
+           <!--pour appeler ou joindreune partie de l'interface-->
+            <fx:include source="tableview.fxml"/>
+        </HBox>
+        
+        <VBox >
+            <HBox  spacing="10" alignment="CENTER_RIGHT" >
+            <!--                pour lancer le tri-->
+                <Button text="runProject" fx:id="lancer"   onAction="#run" />
+                <!--onAction="#pressButtonChangeWindow"-->
+                <Button text="tableView value" onAction="#pressButtonChangeWindow" />
+                <Button text="LineChart" onAction="#lineChart" />
+                <Button text="reset" onAction="#restAll"/>
+               
+                
+            </HBox>
+            <!--pour metmmre les marge entre l'element et les bords de la fênetre c'est comme sa qu'on procéde-->
+             <VBox.margin>
+                  <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+             </VBox.margin>
+        </VBox>
+    </children>
+</VBox>

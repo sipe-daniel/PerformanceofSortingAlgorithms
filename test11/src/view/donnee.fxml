@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+<?import java.net.*?>
+
+<VBox id="VBox" maxHeight="Infinity" maxWidth="Infinity" spacing="5" styleClass="mainFxmlClass" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.GroupRadioButtonController">
+ <stylesheets>
+    <URL value="@donnee.css" />
+ </stylesheets>
+   <children>
+          <fx:include source="checkbox.fxml"/>
+
+            <VBox spacing="10">
+                <HBox spacing="25" >
+                 <Label layoutX="51.0" layoutY="57.0" text="nombre test : " />
+                 <ComboBox fx:id="comboNombre" layoutX="122.0" layoutY="53.0" prefHeight="25.0" prefWidth="69.0" />
+
+                </HBox>
+                 <Label layoutX="51.0" layoutY="57.0" text="Selection des valeurs du test" />
+                 <Button fx:id="button" layoutX="124.0" layoutY="100.0" onAction="#clickButton" text="Validate here!" />
+                 <VBox.margin>
+                      <Insets bottom="5.0" left="20.0" />
+                 </VBox.margin>
+             </VBox>
+
+   </children>
+
+<!--        <VBox.margin>
+            <Insets bottom="0.0" left="20.0" />
+        </VBox.margin>-->
+
+</VBox>

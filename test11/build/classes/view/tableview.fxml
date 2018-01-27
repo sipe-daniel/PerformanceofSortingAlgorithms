@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+<?import java.net.*?>
+
+
+
+
+<!--<VBox id="" maxHeight="Infinity" maxWidth="Infinity" styleClass="mainFxmlClass" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="text1.TableviewController">
+    <stylesheets>
+        <URL value="@tableview.css" />
+    </stylesheets>
+   <children>
+       <VBox >
+        <JFXTreeTableView fx:id="table" maxHeight="Infinity" maxWidth="Infinity"  VBox.vgrow="ALWAYS"  HBox.hgrow="ALWAYS"/>
+        <VBox.margin>
+              <Insets bottom="0.0" right="20.0" />
+        </VBox.margin>
+       </VBox>
+        
+   </children>
+   
+                
+</VBox>-->
+<VBox id="Vbox" prefHeight="200"  maxHeight="Infinity" maxWidth="Infinity" styleClass="mainFxmlClass" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TableviewController">
+   <stylesheets>
+      <URL value="@tableview.css" />
+    </stylesheets>
+    <children>  
+       <VBox spacing="10" > 
+      <TableView fx:id="tableView" layoutX="100.0" layoutY="93.0" prefHeight="500.0" prefWidth="400.0">
+        <columns>
+          <TableColumn fx:id="tableColumnIndexTest" prefWidth="75.0" text="index" />
+          <TableColumn fx:id="tableColumnTriSelection" prefWidth="75.0" text="TriSelection" />
+          <TableColumn fx:id="tableColumnTriInsertion" prefWidth="75.0" text="triInsertion" />
+          <TableColumn fx:id="tableColumnTriBulle" prefWidth="75.0" text="TriBulle" />
+          <TableColumn fx:id="tableColumnTriFusion" prefWidth="75.0" text="triFusion" />
+          <TableColumn fx:id="tableColumnTriRapide" prefWidth="75.0" text="triRapide" />
+        </columns>
+        <VBox.margin>
+            <Insets bottom="0.0" right="20.0" />
+        </VBox.margin>
+      </TableView>
+    
+<!--            <Button fx:id="buttonRemover" layoutX="404.0" layoutY="320.0" mnemonicParsing="false" onAction="#removerItemTableViewClientes" text="remover" />-->
+      <HBox spacing="10" >
+          <Button fx:id="addbutton"  onAction="#addItemTableViewTri" text="update" />
+      </HBox>
+            
+      
+       </VBox>
+   </children>
+   
+</VBox>

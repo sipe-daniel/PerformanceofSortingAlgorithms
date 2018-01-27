@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+<?import java.net.*?>
+
+
+<VBox maxHeight="Infinity" maxWidth="Infinity" spacing="30" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CheckboxController">
+      <children>
+        <VBox spacing="10" >
+          <Text text="Algorithmes mis l'epreuve" /> 
+          <CheckBox mnemonicParsing="false" fx:id="triSelection"   maxHeight="Infinity" maxWidth="Infinity" text="tri Selection"     HBox.hgrow="ALWAYS" />
+          <CheckBox mnemonicParsing="false" fx:id="triInsertion"   maxHeight="Infinity" maxWidth="Infinity" text="tri Insertion" HBox.hgrow="ALWAYS" />
+          <CheckBox mnemonicParsing="false" fx:id="triBulle"       maxHeight="Infinity" maxWidth="Infinity" text="tri Bulle"    HBox.hgrow="ALWAYS" />
+          <CheckBox mnemonicParsing="false" fx:id="coreTriFusion"  maxHeight="Infinity" maxWidth="Infinity" text="tri Fusion"    HBox.hgrow="ALWAYS" />
+          <CheckBox mnemonicParsing="false" fx:id="coreTriRapide"  maxHeight="Infinity" maxWidth="Infinity" text="tri Rapide" HBox.hgrow="ALWAYS" />
+        </VBox>
+        <VBox spacing="10">
+            <Label text="validez les tri choisie"/>
+            <Button onAction="#button" text="Validate here!"  />
+        </VBox>
+      
+      </children>
+          <VBox.margin>
+           <Insets bottom="0.0" left="20.0" />
+        </VBox.margin>
+      
+   </VBox> 
+
