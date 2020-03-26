@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.collections.*?>
+<?import java.net.*?>
+
+<VBox id="VBox"  maxHeight="Infinity" maxWidth="Infinity" spacing="20"  prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController"> 
+    <stylesheets>
+        <URL value="@ui.css" />
+    </stylesheets>
+    <children>
+        
+        <fx:include source="menu.fxml"/> 
+
+        <VBox  alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+            <Text id="header-text" text="Programme test de la performance des algorithmes"/>
+        </VBox>
+    
+        <HBox maxHeight="Infinity" maxWidth="Infinity" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+            
+            <fx:include source="donnee.fxml"/> 
+            <fx:include source="tableview.fxml"/>
+        </HBox>
+        
+        <VBox >
+            <HBox  spacing="10" alignment="CENTER_RIGHT" >
+            <!--                pour lancer le tri-->
+                <Button text="RunProject" fx:id="lancer" onAction="#run" />
+                <!--onAction="#pressButtonChangeWindow"-->
+                <!--<Button text="tableView value" onAction="#pressButtonChangeWindow" />-->
+                <Button text="LineChart" onAction="#lineChart" />
+                <Button text="Reset" onAction="#restAll"/>
+               
+            </HBox>
+             <VBox.margin>
+                  <Insets bottom="20.0" left="10.0" right="10.0" top="10.0" />
+             </VBox.margin>
+        </VBox>
+    </children>
+</VBox>

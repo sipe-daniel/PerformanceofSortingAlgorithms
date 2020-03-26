@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.*?>
+
+<VBox id="Vbox" maxHeight="Infinity" maxWidth="Infinity" prefHeight="550.0" prefWidth="700.0" spacing="20" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.LineChartController">
+   <children>
+       <LineChart fx:id="lineChart" title="Line Chart : Evaluation of Sorting Algorithms">
+           <xAxis>
+               <CategoryAxis label="Sorting Values" side="BOTTOM" />
+           </xAxis>
+           <yAxis>
+               <NumberAxis label="Sorting Times" side="LEFT" />
+           </yAxis>
+       </LineChart>
+       
+        <VBox >
+            <Label fx:id="label" prefHeight="50.0" prefWidth="200.0" textFill="#eb1515" />
+            <VBox.margin>
+                <javafx.geometry.Insets left="100" /> 
+            </VBox.margin>
+        </VBox>
+        
+       <VBox>
+           <children>
+              <VBox >
+                  <VBox.margin>
+                      <javafx.geometry.Insets left="100" /> 
+                  </VBox.margin>
+              </VBox>
+              <Button onAction="#btnUpload" text="Load Chart" />
+          </children>
+           <VBox.margin>
+               <javafx.geometry.Insets left="580" /> 
+           </VBox.margin>
+       </VBox>
+   </children>
+    
+    
+</VBox>
